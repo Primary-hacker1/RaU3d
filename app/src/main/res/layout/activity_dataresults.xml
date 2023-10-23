@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Progress_bule"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/Progress_bule"
+            app:sCenterTextColor="@color/white"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="20sp"
+            app:sCenterTextString="数据结果报告"
+            app:sDividerLineType="none"
+            app:sShapeCornersRadius="20dp"
+            app:sUseRipple="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.xuexiang.xui.widget.imageview.RadiusImageView
+                        android:id="@+id/main_img_active"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="32dp"
+                        android:clickable="true"
+                        android:src="@drawable/zxj"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="1px"
+                        app:riv_corner_radius="15dp"
+                        app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                        app:riv_selected_border_width="2px"
+                        app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+
+                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                        android:id="@+id/data_txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        app:sCenterBottomTextColor="@color/black"
+                        app:sCenterTextIsBold="true"
+                        app:sCenterTextSize="26px"
+                        app:sCenterTextString="用户名"
+                        app:sDividerLineType="none"
+                        app:sShapeCornersRadius="20dp"
+                        app:sUseRipple="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.xuexiang.xui.widget.layout.XUILinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1.5"
+                        android:background="#1299f7"
+                        app:xui_radius="12px">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_activiteType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="18sp"
+                            app:sCenterTextString="主动模式"
+                            app:sCenterTopTextColor="@color/white"
+                            app:sCenterTopTextString="训练类型"
+                            app:sCenterViewGravity="left_center"
+                            app:sDividerLineType="none"
+                            app:sUseRipple="false" />
+                    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                    <com.xuexiang.xui.widget.layout.XUILinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="2.5"
+                        android:background="@color/white"
+                        app:xui_borderColor="#1299f7"
+                        app:xui_radius="12px">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:sCenterTextColor="#1299f7"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="病历号：0000000"
+                            app:sCenterTopTextColor="#1299f7"
+                            app:sCenterTopTextSize="15sp"
+                            app:sCenterTopTextString="编 号:001"
+                            app:sCenterViewGravity="left_center"
+                            app:sDividerLineType="none"
+                            app:sUseRipple="false" />
+
+                    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="#f5f6f9"
+                android:orientation="vertical"
+                app:xui_radius="12px">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/data_beizu" />
+
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    app:xui_borderColor="#1299f7"
+                    app:xui_radius="12px">
+
+
+                    <com.classichu.lineseditview.LinesEditView
+                        android:id="@+id/logger"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#f5f6f9"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        app:classic_contentTextColor="@color/black"
+                        app:classic_contentTextSize="20sp"
+                        app:classic_contentViewHeight="320dp"
+                        tools:ignore="MissingConstraints" />
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                <!--                <com.xuexiang.xui.widget.edittext.MultiLineEditText-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="10dp" />-->
+
+
+                <!--                <com.xuexiang.xui.widget.edittext.MultiLineEditText-->
+                <!--                    android:id="@+id/logger"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:background="#f5f6f9" />-->
+
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/databkg"
+            android:orientation="vertical"
+            app:xui_radius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:id="@+id/data_txt_resultstime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    app:sCenterBottomTextColor="@color/black"
+                    app:sCenterSpaceHeight="10dp"
+                    app:sCenterTextColor="@color/black"
+                    app:sCenterTextIsBold="false"
+                    app:sCenterTextString="2021-10-01 19:30"
+                    app:sCenterViewGravity="right_center"
+                    app:sDividerLineType="none"
+                    app:sLeftBottomTextColor="@color/black"
+                    app:sLeftTextString="训练记录时间"
+                    app:sLeftViewGravity="left_center"
+                    app:sRightBottomTextColor="@color/black"
+                    app:sTextViewDrawablePadding="20dp"
+                    app:sUseRipple="false" />
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:id="@+id/data_txt_Aduration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    app:sCenterBottomTextColor="@color/black"
+                    app:sCenterSpaceHeight="10dp"
+                    app:sCenterTextColor="@color/black"
+                    app:sCenterTextIsBold="false"
+                    app:sCenterTextString="00:00"
+                    app:sCenterViewGravity="right_center"
+                    app:sDividerLineType="none"
+                    app:sLeftBottomTextColor="@color/black"
+                    app:sLeftTextString="主动训练时长(min)"
+                    app:sLeftViewGravity="left_center"
+                    app:sLeftViewMarginRight="0dp"
+                    app:sRightBottomTextColor="@color/black"
+                    app:sShapeCornersRadius="20dp"
+                    app:sUseRipple="false" />
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:id="@+id/data_txt_Pduration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:sCenterBottomTextColor="@color/black"
+                    app:sCenterSpaceHeight="10dp"
+                    app:sCenterTextColor="@color/black"
+                    app:sCenterTextIsBold="false"
+                    app:sCenterTextString="00:00"
+                    app:sCenterViewGravity="right_center"
+                    app:sDividerLineType="none"
+                    app:sLeftBottomTextColor="@color/black"
+                    app:sLeftTextString="被动训练时长(min)"
+                    app:sLeftViewMarginRight="0dp"
+                    app:sRightBottomTextColor="@color/black"
+                    app:sRightViewGravity="right_center"
+                    app:sShapeCornersRadius="20dp"
+                    app:sUseRipple="false" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="138dp"
+                        android:layout_height="69dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/km" />
+
+                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                        android:id="@+id/data_txt_mileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:sCenterBottomTextColor="@color/black"
+                        app:sCenterBottomTextString="训练总里程（m）"
+                        app:sCenterSpaceHeight="10dp"
+                        app:sCenterTextColor="@color/black"
+                        app:sCenterTextIsBold="true"
+                        app:sCenterTextSize="25sp"
+                        app:sCenterTextString="100"
+                        app:sCenterViewGravity="center"
+                        app:sDividerLineType="none"
+                        app:sLeftBottomTextColor="@color/black"
+                        app:sRightBottomTextColor="@color/black"
+                        app:sShapeCornersRadius="20dp"
+                        app:sUseRipple="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="138dp"
+                        android:layout_height="69dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/min" />
+
+                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                        android:id="@+id/data_txt_howtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:sCenterBottomTextColor="@color/black"
+                        app:sCenterBottomTextString="训练总时长"
+                        app:sCenterSpaceHeight="10dp"
+                        app:sCenterTextColor="@color/black"
+                        app:sCenterTextIsBold="true"
+                        app:sCenterTextSize="25sp"
+                        app:sCenterTextString="100"
+                        app:sCenterViewGravity="center"
+                        app:sDividerLineType="none"
+                        app:sLeftBottomTextColor="@color/black"
+                        app:sRightBottomTextColor="@color/black"
+                        app:sShapeCornersRadius="20dp"
+                        app:sUseRipple="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="138dp"
+                        android:layout_height="69dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/img_kll" />
+
+                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                        android:id="@+id/data_txt_calories"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:sCenterBottomTextColor="@color/black"
+                        app:sCenterBottomTextString="消耗能量（千卡）"
+                        app:sCenterSpaceHeight="10dp"
+                        app:sCenterTextColor="@color/black"
+                        app:sCenterTextIsBold="true"
+                        app:sCenterTextSize="25sp"
+                        app:sCenterTextString="100"
+                        app:sCenterViewGravity="center"
+                        app:sDividerLineType="none"
+                        app:sLeftBottomTextColor="@color/black"
+                        app:sRightBottomTextColor="@color/black"
+                        app:sShapeCornersRadius="20dp"
+                        app:sUseRipple="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_zuli"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterBottomTextColor="@color/black"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="阻力(档)"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_resistance"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterBottomTextColor="@color/black"
+                            app:sCenterSpaceHeight="10dp"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="3"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_zhuansu"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterBottomTextColor="@color/black"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="转速(rpm)"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_speed"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterBottomTextColor="@color/black"
+                            app:sCenterSpaceHeight="10dp"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="3"
+                            app:sCenterViewGravity="center"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_count"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="痉挛次数(次)"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_spasmcount"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString=""
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sRightViewGravity="right_center"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_jingluan"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterBottomTextColor="@color/black"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="痉挛强度(档)"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sLeftViewGravity="left_center"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/data_txt_spasm"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:sCenterBottomTextColor="@color/black"
+                            app:sCenterSpaceHeight="10dp"
+                            app:sCenterTextColor="@color/black"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="5"
+                            app:sDividerLineType="none"
+                            app:sLeftBottomTextColor="@color/black"
+                            app:sRightBottomTextColor="@color/black"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+
+                    </LinearLayout>
+
+                    <!--                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+                    <!--                        android:id="@+id/data_txt_spasmcount"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="0dp"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        app:sCenterBottomTextColor="@color/black"-->
+                    <!--                        app:sCenterSpaceHeight="10dp"-->
+                    <!--                        app:sCenterTextColor="@color/black"-->
+                    <!--                        app:sCenterTextIsBold="true"-->
+                    <!--                        app:sCenterTextString="痉挛次数(次)"-->
+                    <!--                        app:sDividerLineType="none"-->
+                    <!--                        app:sLeftBottomTextColor="@color/black"-->
+                    <!--                        app:sCenterBottomTextString="0"-->
+                    <!--                        app:sLeftViewMarginRight="0dp"-->
+                    <!--                        app:sRightBottomTextColor="@color/black"-->
+                    <!--                        app:sRightViewGravity="right_center"-->
+                    <!--                        app:sShapeCornersRadius="20dp"-->
+                    <!--                        app:sUseRipple="false" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/data_layout_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:id="@+id/data_txt_o2"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_2_bg"
+                    app:sCenterBottomTextColor="@color/white"
+                    app:sCenterBottomTextIsBold="true"
+                    app:sCenterBottomTextSize="18sp"
+                    app:sCenterSpaceHeight="10dp"
+                    app:sCenterTextColor="@color/white"
+                    app:sCenterTextIsBold="true"
+                    app:sCenterTextSize="20sp"
+                    app:sCenterTopTextColor="@color/white"
+                    app:sCenterTopTextIsBold="true"
+                    app:sCenterTopTextSize="22sp"
+                    app:sCenterTopTextString="    "
+                    app:sDividerLineType="none"
+                    app:sLeftBottomTextColor="@color/white"
+                    app:sLeftBottomTextString="最高血压饱和度："
+                    app:sLeftTextColor="@color/white"
+                    app:sLeftTextString="最低血氧饱和度："
+                    app:sLeftTopTextColor="#FF0298A2"
+                    app:sLeftTopTextIsBold="true"
+                    app:sLeftTopTextSize="22sp"
+                    app:sLeftTopTextString="血氧饱和度(%)"
+                    app:sLeftViewGravity="left_center"
+                    app:sRightBottomTextColor="@color/white"
+                    app:sRightViewGravity="center"
+                    app:sShapeCornersRadius="20dp"
+                    app:sUseRipple="false" />
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:id="@+id/data_txt_heartRate"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_bpm_bg"
+                    app:sCenterBottomTextColor="@color/white"
+                    app:sCenterBottomTextIsBold="true"
+                    app:sCenterBottomTextSize="20sp"
+                    app:sCenterBottomTextString="98"
+                    app:sCenterSpaceHeight="10dp"
+                    app:sCenterTextColor="@color/white"
+                    app:sCenterTextIsBold="true"
+                    app:sCenterTextSize="20sp"
+                    app:sCenterTextString="96"
+                    app:sCenterTopTextColor="@color/white"
+                    app:sCenterTopTextIsBold="true"
+                    app:sCenterTopTextSize="22sp"
+                    app:sCenterTopTextString="    "
+                    app:sDividerLineType="none"
+                    app:sLeftBottomTextColor="@color/white"
+                    app:sLeftBottomTextString="最高心率："
+                    app:sLeftTextColor="@color/white"
+                    app:sLeftTextString="最低心率："
+                    app:sLeftTopTextColor="#FF0277C4"
+                    app:sLeftTopTextIsBold="true"
+                    app:sLeftTopTextSize="22sp"
+                    app:sLeftTopTextString="心率(bpm)"
+                    app:sLeftViewGravity="left_center"
+                    app:sRightBottomTextColor="@color/white"
+                    app:sShapeCornersRadius="20dp"
+                    app:sUseRipple="false" />
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:id="@+id/data_txt_blooddata"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_hg_bg"
+                    app:sCenterBottomTextColor="@color/white"
+                    app:sCenterBottomTextIsBold="true"
+                    app:sCenterBottomTextSize="20sp"
+                    app:sCenterBottomTextString="75/129"
+                    app:sCenterSpaceHeight="10dp"
+                    app:sCenterTextColor="@color/white"
+                    app:sCenterTextIsBold="true"
+                    app:sCenterTextSize="20sp"
+                    app:sCenterTextString="66/112"
+                    app:sCenterTopTextColor="@color/white"
+                    app:sCenterTopTextIsBold="true"
+                    app:sCenterTopTextSize="22sp"
+                    app:sCenterTopTextString="    "
+                    app:sDividerLineType="none"
+                    app:sLeftBottomTextColor="@color/white"
+                    app:sLeftBottomTextString="训练后血压："
+                    app:sLeftTextColor="@color/white"
+                    app:sLeftTextString="训练前血压："
+                    app:sLeftTopTextColor="#FFDD7A08"
+                    app:sLeftTopTextIsBold="true"
+                    app:sLeftTopTextSize="22sp"
+                    app:sLeftTopTextString="血压(mmHg)"
+                    app:sLeftViewGravity="left_center"
+                    app:sRightBottomTextColor="@color/white"
+                    app:sShapeCornersRadius="20dp"
+                    app:sUseRipple="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                    android:id="@+id/data_btn_save"
+                    android:layout_width="144dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="32dp"
+                    android:gravity="center"
+                    android:text="保存数据"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_password"
+                    app:sb_color_pressed="@color/actionsheet_blue"
+                    app:sb_color_unpressed="#16a6fb"
+                    app:sb_radius="8px"
+                    app:sb_ripple_color="@color/actionsheet_blue" />
+
+                <!--                <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton-->
+                <!--                    android:id="@+id/data_btn_again"-->
+                <!--                    android:layout_width="216px"-->
+                <!--                    android:layout_height="72px"-->
+                <!--                    android:layout_marginLeft="48px"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="@string/login_login"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="28px"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHeight_percent="0.1"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@id/layout_password"-->
+                <!--                    app:sb_color_pressed="@color/actionsheet_blue"-->
+                <!--                    app:sb_color_unpressed="#16a6fb"-->
+                <!--                    app:sb_radius="8px"-->
+                <!--                    app:sb_ripple_color="@color/actionsheet_blue"-->
+                <!--                    />-->
+
+                <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                    android:id="@+id/data_btn_again"
+                    android:layout_width="144dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center"
+                    android:text="继续训练"
+                    android:textColor="#16a6fb"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_password"
+                    app:rb_backgroundColor="@color/white"
+                    app:rb_borderColor="@color/xui_config_color_blue"
+                    app:rb_borderWidth="2dp"
+                    app:rb_radius="8px" />
+
+
+            </LinearLayout>
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

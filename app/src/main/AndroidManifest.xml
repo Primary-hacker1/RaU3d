@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rick.recoveryapp">
+
+    <!--进程杀死-->
+    <!--    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--    <uses-permission android:name="android.permission.BLUETOOTH" />-->
+    <!--    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />-->
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--     Android 12在不申请定位权限时，必须加上android:usesPermissionFlags="neverForLocation"，否则搜不到设备 -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan|stateHidden">
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme_welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".bluetooth.BluetoothConnectActivityReceiver"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".bluetooth.BtKeepService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".bluetooth.KeepLifeService"
+            android:process=":keepLife" />
+
+        <activity
+            android:name=".activity.MacDrDialog"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogTheme" />
+
+        <activity
+            android:name=".activity.u3d.U3DActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+
+        <!--        android:launchMode="singleTask"-->
+        <!--        UnityReaderActivity-->
+        <!--        <activity-->
+        <!--            android:name=".activity.u3d.U3DActivity"-->
+        <!--            android:screenOrientation="landscape"-->
+        <!--            android:process="com.rick.recoveryapp.remote" />-->
+
+        <!--        <activity-->
+        <!--            android:name=".activity.TempActivitty"-->
+        <!--            android:screenOrientation="landscape"-->
+        <!--            />-->
+        <!--            android:theme="@style/XUITheme.Launch.Demo"-->
+
+        <!--        <activity-->
+        <!--            android:name=".activity.LoginActivity"-->
+        <!--            android:screenOrientation="landscape" />-->
+
+        <activity
+            android:name=".activity.AdminMainActivity"
+            android:screenOrientation="landscape" />
+
+        <!--        android:theme="@style/AppTheme.Launch.App"-->
+        <!--        android:theme="@style/XUITheme.Launch.Demo"-->
+        <!--        android:theme="@style/AppTheme.Launch.App"-->
+
+        <activity
+            android:name=".activity.u3d.U3DdataActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/U3dDialogTheme" />
+
+        <!--        android:theme="@style/U3dDialogTheme"-->
+        <!--        android:theme="@style/XUITheme.Launch.Demo"-->
+
+        <activity
+            android:name=".activity.DataResultsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.SelectRolesActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.u3d.U3DDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogTheme" />
+
+        <!--        <activity-->
+        <!--            android:name=".activity.BluetoolthDialog"-->
+        <!--            android:screenOrientation="landscape"-->
+        <!--            android:theme="@style/DialogTheme"-->
+        <!--            />-->
+
+        <activity
+            android:name=".activity.DialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogTheme" />
+
+        <activity
+            android:name=".activity.ActiveActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.PassiveActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.IntelligenceActivity"
+            android:screenOrientation="landscape" />
+
+        <!--        &lt;!&ndash;fragment的页面容器&ndash;&gt;-->
+        <!--        <activity-->
+        <!--            android:name="com.xuexiang.Recovery.core.BaseActivity"-->
+        <!--            android:configChanges="screenSize|keyboardHidden|orientation|keyboard"-->
+        <!--            android:screenOrientation="landscape"-->
+        <!--            android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <!--        &lt;!&ndash; 版本更新提示&ndash;&gt;-->
+        <!--        <activity-->
+        <!--            android:name="com.xuexiang.Recovery.utils.update.UpdateTipDialog"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/DialogTheme" />-->
+        <!--        &lt;!&ndash; Webview拦截提示弹窗&ndash;&gt;-->
+
+        <!--        <activity-->
+        <!--            android:name="com.xuexiang.Recovery.core.webview.WebViewInterceptDialog"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/DialogTheme" />-->
+        <!-- applink的中转页面 -->
+        <!--        <activity-->
+        <!--            android:name="com.xuexiang.Recovery.core.XPageTransferActivity"-->
+        <!--            android:configChanges="screenSize|keyboardHidden|orientation|keyboard"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:windowSoftInputMode="adjustPan|stateHidden" />-->
+
+        <!--屏幕自适应设计图-->
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="1333" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="800" />
+    </application>
+
+</manifest>

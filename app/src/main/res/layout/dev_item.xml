@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        app:xui_borderColor="@color/xui_config_color_gray_8"
+        android:gravity="center"
+        app:xui_radius="2dp">
+
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/dev_txt_devname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                app:sCenterTextIsBold="false"
+                app:sLeftTextString="设备名称 ："
+                app:sCenterTextString="默认"
+                app:sLeftBottomTextString="设备mac ："
+                app:sCenterBottomTextString="默认"
+                app:sDividerLineType="none"
+                app:sShapeCornersRadius="20dp"
+                app:sUseRipple="true"
+                tools:ignore="MissingConstraints" />
+
+<!--        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+<!--            android:id="@+id/dev_txt_devaddress"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            app:sCenterTextIsBold="false"-->
+<!--            app:sLeftTextString="设备MAC ："-->
+<!--            app:sCenterTextString="默认"-->
+<!--            app:sDividerLineType="none"-->
+<!--            app:sShapeCornersRadius="20dp"-->
+<!--            app:sUseRipple="false"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/config_margin_5dp"
+    android:orientation="vertical"
+    >
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="@dimen/config_margin_10dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/white"
+        app:xui_radius="4dp"
+        >
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:sCenterTextColor="@color/xui_config_color_gray_9"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="20sp"
+            app:sDividerLineType="none"
+            app:sShapeCornersRadius="20dp"
+            app:sUseRipple="false"
+            />
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+</LinearLayout>
+

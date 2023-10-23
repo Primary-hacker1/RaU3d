@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">上下肢康复机</string>
+    <string name="game_view_content_description">Game view</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--欢迎界面-->
+    <string name="welcome_wel">Welcome</string>
+    <string name="Welcome_foryou">For you, a thousand times over！</string>
+    <string name="welcome_weini">为您千千万万遍!</string>
+
+    <!--登录界面-->
+    <string name="login_admin">请输入账号</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login_login">立 即 登 录</string>
+
+    <!--用户信息对话框-->
+    <string name="dialog_title">创建患者信息</string>
+    <string name="dialog_id">记录编号</string>
+    <string name="dialog_name">患者姓名</string>
+    <string name="dialog_medicalNumber">病历号码</string>
+    <string name="dialog_hint">请输入姓名</string>
+    <string name="dialog_close">取 消</string>
+    <string name="dialog_next">下一步</string>
+
+
+    <string name="tip_warning">警告</string>
+    <string name="content_warning">是否要进行蓝牙地址修改？</string>
+    <string name="setting_warning">是否要修改登录信息？</string>
+    <string name="hint_please_input_password">请输入密码</string>
+    <string name="lab_continue">继 续</string>
+    <string name="lab_change">取 消</string>
+
+
+    <string name="macdialog_title">蓝牙地址信息(字母大写)</string>
+    <string name="macdialog_next">保 存</string>
+    <string name="macdialog_bloothmac">蓝牙地址</string>
+    <string name="macdialog_ecgmac">心电地址</string>
+    <string name="macdialog_bloodmac">血压地址</string>
+    <string name="macdialog_oxygenmac">血氧地址</string>
+
+    <!--运动界面-->
+    <string name="bpm">心率（bpm）</string>
+    <string name="mmHg">舒张压（mmHg）</string>
+    <string name="mmHg_s">收缩压（mmHg）</string>
+    <string name="SPO2">血氧饱和度（SPO2）</string>
+
+
+    <string name="menu_active">主动模式</string>
+    <string name="menu_passive">被动模式</string>
+    <string name="menu_intelligence">智能模式</string>
+    <string name="menu_Profile">情景模式</string>
+
+    <string name="lab_submit">下一步</string>
+    <string name="lab_cancel">取消</string>
+
+    <string name="progress_txt_speed">转速</string>
+    <string name="progress_txt_rpm">rpm</string>
+    <string name="progress_txt_resistance">阻力</string>
+    <string name="progress_txt_spasm">痉挛</string>
+    <string name="progress_txt_left">左肢</string>
+    <string name="progress_txt_right">右肢</string>
+
+    <string name="login_break">是否退出应用软件？</string>
+    <string name="active_return">是否退出训练，返回首页？</string>
+    <string name="active_blood_return">是否取消测量运动后血压？</string>
+    <string name="active_blood_end">训练已停止，是否进行运动后血压测量？</string>
+
+    <string name="active_blood_endOK">已测量运动后血压，是否使用该数据？</string>
+    <string name="active_change">是否切换训练模式？</string>
+
+    <string name="active_out">检测到最大痉挛次数，训练已停止，是否测量运动后血压？</string>
+
+    <string name="setting_out">蓝牙配置已完成，请重新启动程序！</string>
+
+    <string name="active_blood">还未测量血压，是否开始训练？</string>
+
+    <string name="data_return">未填写结论与建议，是否继续保存数据？</string>
+
+    <string name="history_select">输入用户信息进行查询</string>
+    <string name="history_UserCoder">记录编号</string>
+    <string name="history_UserName">患者姓名</string>
+    <string name="history_LogTime">记录时间</string>
+    <string name="history_TimeCount">训练时长</string>
+    <string name="history_type">训练类型</string>
+    <string name="history_cope">病历号</string>
+    <string name="lab_yes">是</string>
+    <string name="lab_no">否</string>
+
+    <string name="lab_ok">确认</string>
+    <string name="lab_null"> </string>
+
+    <string name="tip_permission">确定调节转速到30及以上吗？</string>
+
+
+    <string name="alphabet_and_number">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+
+    <string name="MacNumber">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+
+    <string name="bluetoohdialog_title">蓝牙列表</string>
+    <string name="bluetoohdialog_next">刷新列表</string>
+    <!-- 隐私政策弹窗   -->
+    <string name="lab_exit_app">退出应用</string>
+    <string name="lab_agree">同意</string>
+    <string name="lab_disagree">不同意</string>
+    <string name="lab_look_again">再次查看</string>
+    <string name="lab_still_disagree">仍不同意</string>
+    <string name="title_reminder">温馨提示</string>
+    <string name="content_think_about_it_again">要不要再想想</string>
+    <string name="content_privacy_explain_again">我们非常重视对你个人信息的保护，承诺严格按照《%s隐私权政策》保护及处理你的信息。如果你不同意该政策，很遗憾我们将无法为你提供服务</string>
+    <string name="lab_privacy_name">《%s隐私权政策》</string>
+
+    <string name="lab_mac">主板蓝牙</string>
+    <string name="lab_ecg">心电蓝牙</string>
+    <string name="lab_blood">血压蓝牙</string>
+    <string name="lab_oxygen">血氧蓝牙</string>
+</resources>

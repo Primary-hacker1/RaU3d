@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/u3d_linear_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+        android:id="@+id/u3d_btn_return"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="退  出"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sb_color_unpressed="#16a6fb"
+        app:sb_radius="8px"
+        app:sb_ripple_color="@color/actionsheet_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rick.recoveryapp.utils.view.WaveShowView
+                    android:id="@+id/u3d_waveview_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:sCenterSpaceHeight="2dp"
+                    app:sCenterTextColor="@color/black"
+                    app:sCenterTextIsBold="true"
+                    app:sCenterTextSize="15sp"
+                    app:sCenterTextString="10mm/mV"
+                    app:sDividerLineType="none"
+                    app:sShapeCornersRadius="20dp"
+                    app:sUseRipple="false"
+                    tools:ignore="MissingConstraints" />
+
+                <!--            <com.xuexiang.xui.widget.layout.XUILinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_marginRight="10dp"-->
+                <!--                android:layout_marginBottom="5dp"-->
+                <!--                android:background="@color/white"-->
+                <!--                app:xui_radius="2dp">-->
+                <!--            </com.xuexiang.xui.widget.layout.XUILinearLayout>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#81100000"
+                android:orientation="horizontal"
+                app:xui_radius="2dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="2">
+
+                        <com.xuexiang.xui.widget.progress.CircleProgressView
+                            android:id="@+id/u3d_progress_zhuansu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:cpv_animate_type="AccelerateDecelerateInterpolator"
+                            app:cpv_circle_broken="true"
+                            app:cpv_end_color="@color/Progress_bule"
+                            app:cpv_end_progress="60"
+                            app:cpv_isFilled="false"
+                            app:cpv_isTracked="true"
+                            app:cpv_progress_duration="250"
+                            app:cpv_progress_textColor="@color/Progress_bule"
+                            app:cpv_progress_textVisibility="false"
+                            app:cpv_progress_width="26dp"
+                            app:cpv_scaleZone_length="10dp"
+                            app:cpv_scaleZone_padding="8dp"
+                            app:cpv_scaleZone_width="3dp"
+                            app:cpv_start_color="@color/Progress_bule"
+                            app:cpv_start_progress="0"
+                            app:cpv_track_color="#e6f4fe"
+                            app:cpv_track_width="10dp"
+                            app:layout_constraintDimensionRatio="W,1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_zhuansu"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:sCenterBottomTextColor="@color/white"
+                            app:sCenterBottomTextString="r/min"
+                            app:sCenterSpaceHeight="2dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="20sp"
+                            app:sCenterTextString="5"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                            android:id="@+id/u3d_jia_zhuansu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/jia1"
+                            app:sb_radius="100dp" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/progress_txt_speed"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                            android:id="@+id/u3d_jian_zhuansu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/jian1"
+                            app:sb_radius="100dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="2">
+
+                        <com.xuexiang.xui.widget.progress.CircleProgressView
+                            android:id="@+id/u3d_progress_zhuli"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:cpv_animate_type="AccelerateDecelerateInterpolator"
+                            app:cpv_circle_broken="true"
+                            app:cpv_end_color="@color/Progress_bule"
+                            app:cpv_end_progress="60"
+                            app:cpv_isFilled="false"
+                            app:cpv_isTracked="true"
+                            app:cpv_progress_duration="250"
+                            app:cpv_progress_textColor="@color/Progress_bule"
+                            app:cpv_progress_textVisibility="false"
+                            app:cpv_progress_width="26dp"
+                            app:cpv_scaleZone_length="10dp"
+                            app:cpv_scaleZone_padding="8dp"
+                            app:cpv_scaleZone_width="3dp"
+                            app:cpv_start_color="@color/Progress_bule"
+                            app:cpv_start_progress="0"
+                            app:cpv_track_color="#e6f4fe"
+                            app:cpv_track_width="10dp"
+                            app:layout_constraintDimensionRatio="W,1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_resistance"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:sCenterSpaceHeight="2dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="20sp"
+                            app:sCenterTextString="1"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                            android:id="@+id/u3d_jia_resistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/jia1"
+                            app:sb_radius="100dp" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/progress_txt_resistance"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                            android:id="@+id/u3d_jian_resistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/jian1"
+                            app:sb_radius="100dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="2">
+
+                        <com.xuexiang.xui.widget.progress.CircleProgressView
+                            android:id="@+id/u3d_progress_spasm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:cpv_animate_type="AccelerateDecelerateInterpolator"
+                            app:cpv_circle_broken="true"
+                            app:cpv_end_color="@color/Progress_bule"
+                            app:cpv_end_progress="60"
+                            app:cpv_isFilled="false"
+                            app:cpv_isTracked="true"
+                            app:cpv_progress_duration="250"
+                            app:cpv_progress_textColor="@color/Progress_bule"
+                            app:cpv_progress_textVisibility="false"
+                            app:cpv_progress_width="26dp"
+                            app:cpv_scaleZone_length="10dp"
+                            app:cpv_scaleZone_padding="8dp"
+                            app:cpv_scaleZone_width="3dp"
+                            app:cpv_start_color="@color/Progress_bule"
+                            app:cpv_start_progress="0"
+                            app:cpv_track_color="#e6f4fe"
+                            app:cpv_track_width="10dp"
+                            app:layout_constraintDimensionRatio="W,1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_spasm"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:sCenterSpaceHeight="2dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="20sp"
+                            app:sCenterTextString="1"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                            android:id="@+id/u3d_jia_spasm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/jia1"
+                            app:sb_radius="100dp" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/progress_txt_spasm"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                            android:id="@+id/u3d_jian_spasm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/jian1"
+                            app:sb_radius="100dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="2">
+
+                        <com.xuexiang.xui.widget.progress.CircleProgressView
+                            android:id="@+id/u3d_progress_left"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:cpv_animate_type="AccelerateDecelerateInterpolator"
+                            app:cpv_circle_broken="true"
+                            app:cpv_end_color="@color/Progress_bule"
+                            app:cpv_end_progress="60"
+                            app:cpv_isFilled="false"
+                            app:cpv_isTracked="true"
+                            app:cpv_progress_duration="250"
+                            app:cpv_progress_textColor="@color/Progress_bule"
+                            app:cpv_progress_textVisibility="false"
+                            app:cpv_progress_width="26dp"
+                            app:cpv_scaleZone_length="10dp"
+                            app:cpv_scaleZone_padding="8dp"
+                            app:cpv_scaleZone_width="3dp"
+                            app:cpv_start_color="@color/Progress_bule"
+                            app:cpv_start_progress="0"
+                            app:cpv_track_color="#e6f4fe"
+                            app:cpv_track_width="10dp"
+                            app:layout_constraintDimensionRatio="W,1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_left"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:sCenterSpaceHeight="2dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="20sp"
+                            app:sCenterTextString="0"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/progress_txt_left"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="2">
+
+                        <com.xuexiang.xui.widget.progress.CircleProgressView
+                            android:id="@+id/u3d_progress_right"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:cpv_animate_type="AccelerateDecelerateInterpolator"
+                            app:cpv_circle_broken="true"
+                            app:cpv_end_color="@color/Progress_bule"
+                            app:cpv_end_progress="60"
+                            app:cpv_isFilled="false"
+                            app:cpv_isTracked="true"
+                            app:cpv_progress_duration="250"
+                            app:cpv_progress_textColor="@color/Progress_bule"
+                            app:cpv_progress_textVisibility="false"
+                            app:cpv_progress_width="26dp"
+                            app:cpv_scaleZone_length="10dp"
+                            app:cpv_scaleZone_padding="8dp"
+                            app:cpv_scaleZone_width="3dp"
+                            app:cpv_start_color="@color/Progress_bule"
+                            app:cpv_start_progress="0"
+                            app:cpv_track_color="#e6f4fe"
+                            app:cpv_track_width="10dp"
+                            app:layout_constraintDimensionRatio="W,1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_right"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:sCenterSpaceHeight="2dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="20sp"
+                            app:sCenterTextString="0"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/progress_txt_right"
+                            app:sDividerLineType="none"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false"
+                            tools:ignore="MissingConstraints" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="#81100000"
+                    android:orientation="vertical"
+                    app:xui_radius="2dp">
+
+                    <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                        android:id="@+id/u3d_img_blood"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/blood_btn"
+                        app:riv_selected_mask_color="@color/xui_config_color_gray_6"
+                        app:sb_radius="100dp" />
+
+                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                        android:id="@+id/u3d_txt_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:sCenterTextColor="@color/white"
+                        app:sCenterTextIsBold="true"
+                        app:sCenterTextSize="15sp"
+                        app:sCenterTextString="点击开始测量血压"
+                        app:sDividerLineType="none"
+                        app:sShapeCornersRadius="1dp"
+                        app:sShapeSelectorNormalColor="#16a6fb"
+                        app:sUseRipple="false" />
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#81100000"
+                    android:orientation="horizontal"
+                    app:xui_radius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="false"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/mmHg_s"
+                            app:sDividerLineType="none"
+                            app:sLeftIconRes="@drawable/mmhg_s"
+                            app:sLeftViewMarginLeft="30dp"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_bloodstate2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString=""
+                            app:sDividerLineType="none"
+                            app:sUseRipple="false" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="#fff2f0"
+                                android:orientation="horizontal"
+                                app:layout_constraintDimensionRatio="1:1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintWidth_percent="0.4"
+                                app:xui_radius="100dp"
+                                tools:ignore="MissingConstraints">
+
+                                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                                    android:id="@+id/u3d_txt_high"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:sCenterTextColor="#ff8171"
+                                    app:sCenterTextIsBold="true"
+                                    app:sCenterTextSize="30sp"
+                                    app:sCenterTextString="--"
+                                    app:sDividerLineType="none"
+                                    app:sUseRipple="false" />
+
+                            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="false"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/mmHg"
+                            app:sDividerLineType="none"
+                            app:sLeftIconRes="@drawable/mmhg"
+                            app:sLeftViewMarginLeft="30dp"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_bloodstate1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString=""
+                            app:sDividerLineType="none"
+                            app:sUseRipple="false" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="#f0f0fd"
+                                android:orientation="horizontal"
+                                app:layout_constraintDimensionRatio="1:1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintWidth_percent="0.4"
+                                app:xui_radius="100dp"
+                                tools:ignore="MissingConstraints">
+
+                                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                                    android:id="@+id/u3d_txt_low"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:sCenterTextColor="#767af5"
+                                    app:sCenterTextIsBold="true"
+                                    app:sCenterTextSize="30sp"
+                                    app:sCenterTextString="--"
+                                    app:sDividerLineType="none"
+                                    app:sUseRipple="false" />
+
+                            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="false"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/bpm"
+                            app:sDividerLineType="none"
+                            app:sLeftIconRes="@drawable/bpm"
+                            app:sLeftViewMarginLeft="10dp"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_ecgstate"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString=""
+                            app:sDividerLineType="none"
+                            app:sUseRipple="false" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="#e0fff8"
+                                android:orientation="horizontal"
+                                app:layout_constraintDimensionRatio="1:1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintWidth_percent="0.4"
+                                app:xui_radius="100dp"
+                                tools:ignore="MissingConstraints">
+
+                                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                                    android:id="@+id/u3d_txt_coory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:sCenterTextColor="#0bc097"
+                                    app:sCenterTextIsBold="true"
+                                    app:sCenterTextSize="30sp"
+                                    app:sCenterTextString="--"
+                                    app:sDividerLineType="none"
+                                    app:sUseRipple="false" />
+
+                            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextIsBold="false"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString="@string/SPO2"
+                            app:sDividerLineType="none"
+                            app:sLeftIconRes="@drawable/hbo2"
+                            app:sLeftViewMarginLeft="30dp"
+                            app:sShapeCornersRadius="20dp"
+                            app:sUseRipple="false" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/u3d_txt_o2State"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sCenterTextColor="@color/white"
+                            app:sCenterTextSize="15sp"
+                            app:sCenterTextString=""
+                            app:sDividerLineType="none"
+                            app:sUseRipple="false" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="#ebf3ff"
+                                android:orientation="horizontal"
+                                app:layout_constraintDimensionRatio="1:1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintWidth_percent="0.4"
+                                app:xui_radius="100dp"
+                                tools:ignore="MissingConstraints">
+
+                                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                                    android:id="@+id/u3d_txt_boxygen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:sCenterTextColor="#3e91fc"
+                                    app:sCenterTextIsBold="true"
+                                    app:sCenterTextSize="30sp"
+                                    app:sCenterTextString="--"
+                                    app:sDividerLineType="none"
+                                    app:sRightTextString="%"
+                                    app:sUseRipple="false" />
+
+                            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="#81100000"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:xui_radius="2dp">
+
+                    <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                        android:id="@+id/u3d_img_begin"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/begin"
+                        app:sb_radius="100dp" />
+
+                    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                        android:id="@+id/u3d_txt_begin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:sCenterTextColor="@color/white"
+                        app:sCenterTextIsBold="true"
+                        app:sCenterTextString="开  始"
+                        app:sDividerLineType="none"
+                        app:sShapeCornersRadius="20dp"
+                        app:sShapeSelectorNormalColor="#16a6fb"
+                        app:sUseRipple="false" />
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

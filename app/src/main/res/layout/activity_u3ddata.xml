@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="840dp"
+    android:layout_height="600dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="#03000000">
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        android:id="@+id/u3d_bt_close"
+        style="@style/RoundButton.Auto"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:text="确定修改"
+        android:textColor="@color/xui_config_color_white"
+        android:textSize="20sp"
+        app:textRadius="5dp"
+        app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+        app:textSelectedTextColor="@color/xui_config_color_white"
+        app:textSolidColor="@color/xui_config_color_titlebar"
+        app:textStrokeColor="@color/xui_config_color_white"
+        app:textStrokeWidth="1dp"
+        />
+
+<!--    <com.seeker.luckychart.charts.ECGChartView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        app:renderMode="RENDER_CONTINUOUS"-->
+<!--        app:yOuterCellCounts="6"-->
+<!--        app:ecgLineCount="2"-->
+<!--        app:markTextStyle="10,2"/>-->
+
+</LinearLayout>

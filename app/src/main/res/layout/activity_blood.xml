@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="580dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Progress_bule"
+        app:sCenterTextColor="@color/white"
+        app:sCenterTextIsBold="true"
+        app:sCenterTextSize="20sp"
+        app:sCenterTextString="血压测量"
+        app:sDividerLineType="none"
+        app:sShapeCornersRadius="20dp"
+        app:sUseRipple="false"
+        />
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/blood_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:sCenterSpaceHeight="2dp"
+        app:sCenterTextColor="@color/main_time_bule"
+        app:sCenterTextIsBold="true"
+        app:sCenterTextSize="30sp"
+        app:sDividerLineType="none"
+        app:sShapeCornersRadius="20dp"
+        app:sUseRipple="false"
+        tools:ignore="MissingConstraints"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="340dp"
+        android:background="@drawable/blood_1"
+        android:orientation="horizontal"
+        >
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="117dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            app:sCenterBottomTextColor="@color/main_time_bule"
+            app:sCenterBottomTextIsBold="true"
+            app:sCenterBottomTextString="(mmhg)收缩压"
+            app:sCenterSpaceHeight="2dp"
+            app:sCenterTextSize="30sp"
+            app:sDividerLineType="none"
+            app:sShapeCornersRadius="20dp"
+            app:sUseRipple="false"
+            tools:ignore="MissingConstraints"
+            />
+
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:src="@drawable/blood_2"
+            />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="117dp"
+            android:layout_weight="1"
+            app:sCenterBottomTextColor="@color/main_time_bule"
+            app:sCenterBottomTextIsBold="true"
+            app:sCenterBottomTextString="舒张压(mmhg)"
+            app:sCenterSpaceHeight="2dp"
+            app:sCenterTextSize="30sp"
+            app:sDividerLineType="none"
+            app:sShapeCornersRadius="20dp"
+            app:sUseRipple="false"
+            tools:ignore="MissingConstraints"
+            />
+
+    </LinearLayout>
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/main_img_entertainment"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:src="@drawable/blood_btn"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="1px"
+        app:riv_corner_radius="100dp"
+        app:riv_selected_border_color="@color/xui_config_color_gray_6"
+        app:riv_selected_border_width="2px"
+        app:riv_selected_mask_color="@color/xui_config_color_gray_6"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blood_4"
+        />
+
+</LinearLayout>

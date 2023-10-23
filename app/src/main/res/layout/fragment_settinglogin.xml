@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFF3F6F8"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/Progress_bule"
+        app:sCenterTextColor="@color/white"
+        app:sCenterTextIsBold="true"
+        app:sCenterTextSize="20sp"
+        app:sCenterTextString="登录设置"
+        app:sDividerLineType="none"
+        app:sShapeCornersRadius="20dp"
+        app:sUseRipple="false" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical"
+            app:xui_radius="5dp"
+            tools:ignore="MissingConstraints">
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                app:sCenterTextString="修改登录信息"
+                app:sDividerLineColor="@color/xui_config_color_gray_8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:background="@color/xui_config_color_white"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <com.xuexiang.xui.widget.layout.XUILinearLayout
+                        android:id="@+id/settinglogin_layout_user"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="#f4f4f8"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent="0.1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintWidth_percent="0.8"
+                        app:xui_borderColor="@color/white"
+                        app:xui_borderWidth="1dp"
+                        app:xui_radius="8dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/user" />
+
+                        <EditText
+                            android:id="@+id/settinglogin_etxt_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/register_bg_edittext" />
+
+                    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                    <com.xuexiang.xui.widget.layout.XUILinearLayout
+                        android:id="@+id/layout_password"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="50dp"
+                        android:background="#f4f4f8"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent="0.1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/settinglogin_layout_user"
+                        app:layout_constraintWidth_percent="0.8"
+                        app:xui_borderColor="@color/white"
+                        app:xui_borderWidth="1dp"
+                        app:xui_radius="8dp"
+                        tools:ignore="MissingConstraints,UnknownId">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/password" />
+
+                        <EditText
+                            android:id="@+id/settinglogin_etxt_password"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/register_bg_edittext"
+                            android:inputType="textPassword" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/eyeg" />
+
+                    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent="0.1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/layout_password"
+                        app:layout_constraintWidth_percent="0.8">
+
+                        <com.xuexiang.xui.widget.button.ButtonView
+                            android:id="@+id/settinglogin_btn_update"
+                            style="@style/RoundButton.Auto"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="修  改"
+                            android:textColor="@color/xui_config_color_titlebar"
+                            app:textRadius="5dp"
+                            app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                            app:textSelectedTextColor="@color/xui_config_color_white"
+                            app:textSolidColor="@color/xui_config_color_white"
+                            app:textStrokeColor="@color/xui_config_color_gray_8"
+                            app:textStrokeWidth="1dp" />
+
+                        <com.xuexiang.xui.widget.button.ButtonView
+                            android:id="@+id/settinglogin_btn_save"
+                            style="@style/RoundButton.Auto"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/macdialog_next"
+                            android:textColor="@color/xui_config_color_white"
+                            app:textRadius="5dp"
+                            app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                            app:textSelectedTextColor="@color/xui_config_color_white"
+                            app:textSolidColor="@color/xui_config_color_titlebar"
+                            app:textStrokeColor="@color/xui_config_color_white"
+                            app:textStrokeWidth="1dp" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:xui_radius="5dp"
+            tools:ignore="MissingConstraints">
+
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

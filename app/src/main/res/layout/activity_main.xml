@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2021 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/main_txt_time"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                app:sCenterSpaceHeight="2dp"
+                app:sCenterTextColor="@color/main_time_bule"
+                app:sCenterTextIsBold="true"
+                app:sCenterTextSize="50sp"
+                app:sCenterTextString="10:15"
+                app:sDividerLineType="none"
+                app:sShapeCornersRadius="20dp"
+                app:sUseRipple="false"
+                tools:ignore="MissingConstraints" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/main_txt_date"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:sCenterBottomTextColor="@color/main_time_bule"
+                app:sCenterBottomTextSize="20sp"
+                app:sCenterBottomTextString="10/01"
+                app:sCenterSpaceHeight="2dp"
+                app:sCenterTextColor="@color/main_time_bule"
+                app:sCenterTextIsBold="false"
+                app:sCenterTextSize="20sp"
+                app:sCenterTextString="星期五"
+                app:sDividerLineType="none"
+                app:sShapeCornersRadius="20dp"
+                app:sUseRipple="false"
+                tools:ignore="MissingConstraints" />
+
+            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                android:id="@+id/main_img_link"
+                android:layout_marginLeft="10dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/img_bt_close"
+                app:sb_radius="20dp"
+                />
+
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/button3"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="125dp"-->
+<!--            android:layout_marginRight="60dp"-->
+<!--            android:background="?selectableItemBackgroundBorderless"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--&lt;!&ndash;            <com.xuexiang.xui.widget.imageview.RadiusImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/switchIconView3"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="48dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="48dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@drawable/setting" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sCenterSpaceHeight="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sCenterTextColor="@color/main_time_bule"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sCenterTextIsBold="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sCenterTextSize="15sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sCenterTextString="系统设置"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sDividerLineType="none"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sShapeCornersRadius="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:sUseRipple="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                tools:ignore="MissingConstraints" />&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="125dp"-->
+<!--            android:layout_marginRight="180dp"-->
+<!--            android:background="?selectableItemBackgroundBorderless"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--            <com.xuexiang.xui.widget.imageview.RadiusImageView-->
+<!--                android:id="@+id/switchIconView2"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/img_bt_close" />-->
+
+<!--            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+<!--                android:id="@+id/main_txt_bt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:sCenterSpaceHeight="2dp"-->
+<!--                app:sCenterTextColor="@color/main_time_bule"-->
+<!--                app:sCenterTextIsBold="false"-->
+<!--                app:sCenterTextSize="15sp"-->
+<!--                app:sCenterTextString="蓝牙未连接"-->
+<!--                app:sDividerLineType="none"-->
+<!--                app:sShapeCornersRadius="20dp"-->
+<!--                app:sUseRipple="false"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/main_layout_link"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="125dp"-->
+<!--            android:layout_marginRight="320dp"-->
+<!--            android:background="?selectableItemBackgroundBorderless"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton-->
+<!--                android:id="@+id/main_img_link"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/img_link_close"-->
+<!--                app:sb_radius="20dp" />-->
+
+<!--            &lt;!&ndash;            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="100dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="33dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_margin="16dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/img_link_close"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:sb_radius="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                />&ndash;&gt;-->
+
+<!--            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:sCenterSpaceHeight="2dp"-->
+<!--                app:sCenterTextColor="@color/main_time_bule"-->
+<!--                app:sCenterTextIsBold="false"-->
+<!--                app:sCenterTextSize="15sp"-->
+<!--                app:sCenterTextString="蓝牙重连"-->
+<!--                app:sDividerLineType="none"-->
+<!--                app:sShapeCornersRadius="20dp"-->
+<!--                app:sUseRipple="false"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--            &lt;!&ndash;            <com.xuexiang.xui.widget.imageview.RadiusImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/main_img_active"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginRight="8dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:src="@drawable/zudong"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:riv_border_color="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:riv_border_width="1dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:riv_corner_radius="15dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:riv_selected_border_color="@color/xui_config_color_gray_6"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:riv_selected_border_width="1dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:riv_selected_mask_color="@color/xui_config_color_75_white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="连接状态" />&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="470dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="97dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="W,5:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <com.xuexiang.xui.widget.imageview.RadiusImageView
+                        android:id="@+id/main_img_active"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:src="@drawable/zudong"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="1dp"
+                        app:riv_corner_radius="15dp"
+                        app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                        app:riv_selected_border_width="1dp"
+                        app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+
+                    <com.xuexiang.xui.widget.imageview.RadiusImageView
+                        android:id="@+id/main_img_passive"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:src="@drawable/beidong"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="1px"
+                        app:riv_corner_radius="15dp"
+                        app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                        app:riv_selected_border_width="2px"
+                        app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+                </LinearLayout>
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/main_img_intelligence"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/zineng"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="15dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                    app:riv_selected_border_width="2px"
+                    app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/main_img_entertainment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/qingjing"
+                    android:clickable="true"
+                    android:layout_marginRight="8dp"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="15dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                    app:riv_selected_border_width="2px"
+                    app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/main_img_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.7"
+                    android:src="@drawable/setting1"
+                    android:clickable="true"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="1px"
+                    app:riv_corner_radius="15dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                    app:riv_selected_border_width="2px"
+                    app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/main_img_history"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1.1"
+                    android:src="@drawable/history"
+                    android:clickable="true"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="1px"
+                    app:riv_corner_radius="15dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_6"
+                    app:riv_selected_border_width="2px"
+                    app:riv_selected_mask_color="@color/xui_config_color_75_white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

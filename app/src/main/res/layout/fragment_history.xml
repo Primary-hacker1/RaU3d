@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/train_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+            android:id="@+id/history_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left2"
+            app:sb_shape_type="round"
+             />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/Progress_bule"
+            app:sCenterTextColor="@color/white"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="20sp"
+            app:sCenterTextString="历史记录"
+            app:sDividerLineType="none"
+            app:sShapeCornersRadius="20dp"
+            app:sUseRipple="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/dialog_eid"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/his_etxt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/eid_bag"
+            android:hint="@string/history_select"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/his_img_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_widget_search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="15sp"
+            app:sCenterTextString="@string/history_UserCoder"
+            app:sDividerLineColor="@color/white"
+            app:sDividerLineType="both"
+            app:sShapeCornersRadius="20dp" />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="15sp"
+            app:sCenterTextString="@string/history_cope"
+            app:sDividerLineColor="@color/white"
+            app:sDividerLineType="both"
+            app:sShapeCornersRadius="20dp" />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="15sp"
+            app:sCenterTextString="@string/history_UserName"
+            app:sDividerLineColor="@color/white"
+            app:sDividerLineType="both"
+            app:sShapeCornersRadius="20dp" />
+
+        <!--        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            app:sDividerLineColor="@color/white"-->
+        <!--            app:sShapeCornersRadius="20dp"-->
+        <!--            app:sCenterTextString="@string/history_type"-->
+        <!--            app:sCenterTextSize="15sp"-->
+        <!--            app:sCenterTextIsBold="true"-->
+        <!--            app:sDividerLineType="both"-->
+        <!--            />-->
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="15sp"
+            app:sCenterTextString="@string/history_LogTime"
+            app:sDividerLineColor="@color/white"
+            app:sDividerLineType="both"
+            app:sShapeCornersRadius="20dp" />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="15sp"
+            app:sCenterTextString="训练类型"
+            app:sDividerLineColor="@color/white"
+            app:sDividerLineType="both"
+            app:sShapeCornersRadius="20dp" />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:sCenterTextIsBold="true"
+            app:sCenterTextSize="15sp"
+            app:sCenterTextString="@string/history_TimeCount"
+            app:sDividerLineColor="@color/white"
+            app:sDividerLineType="both"
+            app:sShapeCornersRadius="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp">
+
+        <ListView
+            android:id="@+id/binding.historyList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

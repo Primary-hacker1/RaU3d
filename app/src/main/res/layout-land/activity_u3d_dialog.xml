@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="640dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_bg_normal"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="设置"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/xui_config_color_gray_7"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="程序版本"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/dialog_userid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/dialog_eid"
+                android:enabled="false"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="服务器IP"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/dialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/dialog_eid"
+                android:text="180.102.132.148"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <com.xuexiang.xui.widget.button.ButtonView
+                android:id="@+id/dialog_close"
+                style="@style/RoundButton.Auto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="@color/xui_config_color_titlebar"
+                android:textSize="20sp"
+                app:textRadius="5dp"
+                app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                app:textSelectedTextColor="@color/xui_config_color_white"
+                app:textSolidColor="@color/xui_config_color_white"
+                app:textStrokeColor="@color/xui_config_color_gray_8"
+                app:textStrokeWidth="1dp"
+                />
+
+            <com.xuexiang.xui.widget.button.ButtonView
+                android:id="@+id/dialog_next"
+                style="@style/RoundButton.Auto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text="确定修改"
+                android:textColor="@color/xui_config_color_white"
+                android:textSize="20sp"
+                app:textRadius="5dp"
+                app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                app:textSelectedTextColor="@color/xui_config_color_white"
+                app:textSolidColor="@color/xui_config_color_titlebar"
+                app:textStrokeColor="@color/xui_config_color_white"
+                app:textStrokeWidth="1dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

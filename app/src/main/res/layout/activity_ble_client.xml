@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+   >
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:layout_width="800dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg_normal"
+        android:orientation="vertical"
+        app:xui_radius="4dp"
+        >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/bluetoohdialog_title"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/xui_config_color_gray_7"
+            />
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:xui_radius="5dp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <com.xuexiang.xui.widget.button.ButtonView
+                style="@style/RoundButton.Auto"
+                android:id="@+id/dialog_refresh"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/bluetoohdialog_next"
+                android:textColor="@color/xui_config_color_white"
+                app:textStrokeWidth="1dp"
+                app:textRadius="5dp"
+                app:textStrokeColor="@color/xui_config_color_white"
+                app:textSolidColor="@color/xui_config_color_titlebar"
+                app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                app:textSelectedTextColor="@color/xui_config_color_white"
+                />
+
+
+                <com.xuexiang.xui.widget.button.ButtonView
+                    style="@style/RoundButton.Auto"
+                    android:id="@+id/dialog_close"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/dialog_close"
+                    android:textColor="@color/xui_config_color_titlebar"
+                    app:textStrokeWidth="1dp"
+                    app:textRadius="5dp"
+                    app:textStrokeColor="@color/xui_config_color_gray_8"
+                    app:textSolidColor="@color/xui_config_color_white"
+                    app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                    app:textSelectedTextColor="@color/xui_config_color_white"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="scan"-->
+<!--            android:text="扫描" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="stopScan"-->
+<!--            android:text="暂停扫描" />-->
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>

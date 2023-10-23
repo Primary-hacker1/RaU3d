@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFF3F6F8"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/Progress_bule"
+        app:sCenterTextColor="@color/white"
+        app:sCenterTextIsBold="true"
+        app:sCenterTextSize="20sp"
+        app:sCenterTextString="系统设置"
+        app:sDividerLineType="none"
+        app:sShapeCornersRadius="20dp"
+        app:sUseRipple="false" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:orientation="vertical"
+                app:xui_radius="5dp"
+                tools:ignore="MissingConstraints">
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:sCenterTextString="蓝牙参数配置"
+                    app:sDividerLineColor="@color/xui_config_color_gray_8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/xui_config_color_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/setting_Mac_Bluetooth"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            app:sDividerLineType="none"
+                            app:sLeftTextString="主板蓝牙" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/setting_Mac_Ecgmac"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            app:sDividerLineType="none"
+                            app:sLeftTextString="心电蓝牙" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/setting_Mac_Bloodmac"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            app:sDividerLineType="none"
+                            app:sLeftTextString="血压蓝牙" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/setting_Mac_Oxygenmac"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            app:sDividerLineType="none"
+                            app:sLeftTextString="血氧蓝牙" />
+
+                        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                            android:id="@+id/setting_txt_stact"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="0.5"
+                            app:sCenterTextIsBold="true"
+                            app:sCenterTextString="按钮锁定中"
+                            app:sDividerLineType="none" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.button.ButtonView
+                            android:id="@+id/setting_btn_unlock"
+                            style="@style/RoundButton.Auto"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="修  改"
+                            android:textColor="@color/xui_config_color_titlebar"
+                            app:textRadius="5dp"
+                            app:textSelectedSolidColor="@color/xui_btn_blue_select_color"
+                            app:textSelectedTextColor="@color/xui_config_color_white"
+                            app:textSolidColor="@color/xui_config_color_white"
+                            app:textStrokeColor="@color/xui_config_color_gray_8"
+                            app:textStrokeWidth="1dp" />
+
+<!--                        <com.xuexiang.xui.widget.button.ButtonView-->
+<!--                            android:id="@+id/setting_btn_save"-->
+<!--                            style="@style/RoundButton.Auto"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginLeft="30dp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginRight="30dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:text="@string/macdialog_next"-->
+<!--                            android:textColor="@color/xui_config_color_white"-->
+<!--                            app:textRadius="5dp"-->
+<!--                            app:textSelectedSolidColor="@color/xui_btn_blue_select_color"-->
+<!--                            app:textSelectedTextColor="@color/xui_config_color_white"-->
+<!--                            app:textSolidColor="@color/xui_config_color_titlebar"-->
+<!--                            app:textStrokeColor="@color/xui_config_color_white"-->
+<!--                            app:textStrokeWidth="1dp" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:xui_radius="5dp"
+                tools:ignore="MissingConstraints">
+
+
+                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:sCenterTextString="蓝牙设备列表"
+                    app:sDividerLineColor="@color/xui_config_color_gray_8" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    app:xui_borderColor="#FFF3F6F8"
+                    app:xui_radius="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <!--                        <com.xuexiang.xui.widget.button.ButtonView-->
+                        <!--                            android:id="@+id/dialog_close"-->
+                        <!--                            style="@style/RoundButton.Auto"-->
+                        <!--                            android:layout_width="0dp"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:layout_marginLeft="10dp"-->
+                        <!--                            android:layout_marginTop="10dp"-->
+                        <!--                            android:layout_marginRight="20dp"-->
+                        <!--                            android:layout_marginBottom="5dp"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:text="@string/dialog_close"-->
+                        <!--                            android:textColor="@color/xui_config_color_titlebar"-->
+                        <!--                            app:textRadius="5dp"-->
+                        <!--                            app:textSelectedSolidColor="@color/xui_btn_blue_select_color"-->
+                        <!--                            app:textSelectedTextColor="@color/xui_config_color_white"-->
+                        <!--                            app:textSolidColor="@color/xui_config_color_white"-->
+                        <!--                            app:textStrokeColor="@color/xui_config_color_gray_8"-->
+                        <!--                            app:textStrokeWidth="1dp" />-->
+
+<!--                        <com.xuexiang.xui.widget.button.ButtonView-->
+<!--                            android:id="@+id/setting_btn_refresh"-->
+<!--                            style="@style/RoundButton.Auto"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginLeft="50dp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginRight="50dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:text="@string/bluetoohdialog_next"-->
+<!--                            android:textColor="@color/xui_config_color_white"-->
+<!--                            app:textRadius="5dp"-->
+<!--                            app:textSelectedSolidColor="@color/xui_btn_blue_select_color"-->
+<!--                            app:textSelectedTextColor="@color/xui_config_color_white"-->
+<!--                            app:textSolidColor="@color/xui_config_color_titlebar"-->
+<!--                            app:textStrokeColor="@color/xui_config_color_white"-->
+<!--                            app:textStrokeWidth="1dp" />-->
+
+
+                    </LinearLayout>
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
